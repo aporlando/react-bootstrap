@@ -1,5 +1,4 @@
-
-
+import './Alert';
 import './Grid';
 import './Button';
 import './Dropdown';

@@ -9,7 +9,7 @@ import {
   prefix,
   splitBsProps
 } from './utils/bootstrapUtils';
-import { State } from './utils/StyleConfig';
+import { State, Style } from './utils/StyleConfig';
 import CloseButton from './CloseButton';
 
 const propTypes = {
@@ -49,7 +49,7 @@ Alert.propTypes = propTypes;
 Alert.defaultProps = defaultProps;
 
 export default bsStyles(
-  Object.values(State),
+  [...Object.values(State), ...Object.values(Style)],
   State.INFO,
   bsClass('alert', Alert)
 );
